@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FootBall-Playerz</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="FootBall-Playerz">
+  <link rel="shortcut icon" href="fball-logo.ico">
+  <link rel="apple-touch-icon" href="/assets/images/icons/icon-152x152.png">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ef5350">
+
+  <meta name="description" content="FootBall-Playerz is a small app for see the football player in the world.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/material-icons.css">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/preloader.css">
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <!-- <div class="navbar-fixed"> -->
+  <nav class="red lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo" id="logo-container">F.B-Playerz</a>
+      <a href="#" class="sidenav-trigger" data-target="nav-mobile"><i class="material-icons">menu</i></a>
+
+
+      <ul class="right">
+        <li class="saved-button-only">
+          <a href="#saved">
+            <i class="material-icons">folder_special</i>
+          </a>
+        </li>
+      </ul>
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+  <!-- </div> -->
+  <!-- Akhir Navigasi -->
+  <div class="container" id="body-content"></div>
+
+
+  <footer>
+    <div class="row">
+      <div class="col s12 center">
+        <p>Made with ❤ by <a href="https://www.instagram.com/adipati_ma" target="_blank">adipatima</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- PreLoader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Akhir PreLoader -->
+
+
+
+  <script src="/assets/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/js/materialize.min.js"></script>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/idb.js"></script>
+  <script src="/assets/js/db.js"></script>
+  <script src="/assets/js/for-index.js"></script>
+  <script src="/assets/js/preloader.js"></script>
+
+  <script src="/register-sw.js"></script>
+
+</body>
+
+</html>

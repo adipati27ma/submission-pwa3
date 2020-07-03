@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Team Detail</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="My PWA">
+  <link rel="shortcut icon" href="fball-logo.ico">
+  <link rel="apple-touch-icon" href="/assets/images/icons/icon-152x152.png">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ef5350">
+
+  <meta name="description" content="My first Progressive Web Application">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/material-icons.css">
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/preloader.css">
+
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <div class="navbar-fixed">
+    <nav class="red lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">F.B-Playerz</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="./index.html">
+              <i class="material-icons">close</i>
+            </a>
+          </li>
+        </ul>
+        <ul id="nav-mobile" class="left hide-on-large-only">
+          <li>
+            <a href="./index.html">
+              <i class="material-icons">close</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Akhir Navigasi -->
+
+
+  <div class="container" id="body-content">
+
+    <div class="row last-updated">
+      <div class="col s6">
+        <p>last updated : <b><span></span></b></p>
+      </div>
+      <div class="col s6">
+        <p><b><span class="new badge red" data-badge-caption="Spain"></span></b></p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s4 club-logo-wrapper">
+        <img src="" alt="" title="" class="responsive-img club-logo">
+      </div>
+
+      <div class="col s8">
+        <div class="row">
+          <h4 class="team-name"></h4>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="row">
+              <div class="col s3"><i class="material-icons">language</i></div>
+              <div id="team-website" class="col s9">
+                <p>loading...</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s3"><i class="material-icons">invert_colors</i></div>
+              <div id="team-color" class="col s9">
+                <p>loading...</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s3"><i class="material-icons">location_on</i></div>
+              <div id="team-venue" class="col s9">
+                <p>loading...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Squad Member -->
+    <h5>SQUAD</h5>
+    <div class="row">
+      <div class="col s12" id="squad-member">
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- tombol save -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" id="save-button">
+      <i class="large material-icons">favorite_border</i>
+    </a>
+  </div>
+
+
+  <footer>
+    <div class="row">
+      <div class="col s12 center">
+        <p>Made with ❤ by <a href="https://www.instagram.com/adipati_ma" target="_blank">adipatima</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- PreLoader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Akhir PreLoader -->
+
+
+
+
+  <script src="/assets/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/js/materialize.min.js"></script>
+  <script src="/assets/js/api.js"></script>
+
+  <script src="register-sw.js"></script>
+  <script src="/assets/js/idb.js"></script>
+  <script src="/assets/js/db.js"></script>
+  <script src="/assets/js/for-teams.js"></script>
+  <script src="/assets/sweetalert2/sweetalert2.all.min.js"></script>
+  <script src="/assets/js/preloader.js"></script>
+
+
+</body>
+
+</html>
